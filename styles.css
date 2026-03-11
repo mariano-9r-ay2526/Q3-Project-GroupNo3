@@ -4,7 +4,7 @@ body {
     background-size: cover;
 }
 .container {
-    width: 100px;;
+    width: 100px;
     background-color: rgb(180, 203, 244);
     opacity: 90%;
     padding: 20px;  
@@ -20,5 +20,6 @@ img {
   width: 20%;
   border-radius: 10%;
 }
+
 
 
