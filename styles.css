@@ -1,7 +1,8 @@
 body {
     background-image: url('wal_172619-city-7576853_1280.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
 }
 .container {
     width: 100px;
@@ -20,6 +21,7 @@ img {
   width: 20%;
   border-radius: 10%;
 }
+
 
 
 
