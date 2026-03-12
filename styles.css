@@ -4,7 +4,8 @@ body {
       background-attachment: fixed;  
       background-size: cover;
 }
-.container-fluid {
+
+.container {
     width: 100%;
     background-color: rgb(180, 203, 244);
     opacity: 90%;  
@@ -21,6 +22,7 @@ img {
   width: 20%;
   border-radius: 10%;
 }
+
 
 
 
