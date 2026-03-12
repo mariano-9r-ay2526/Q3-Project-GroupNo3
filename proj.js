@@ -1,21 +1,24 @@
-var basefare = 50; 
-var perKMrate = 15; 
-var baseKM = 2; 
+function computeFare(){
 
-function calculateRegular() {
-    var start = document.getElementById("startStation").value;
-    var end = document.getElementById("endStation").value;
-    var distance = Math.abs(start - end);
-    var price = Math.max(basefare, basefare + (distance - baseKM) * perKMrate);
-    document.getElementById("fareResult").innerText = "Regular Fare: ₱" + price.toFixed(2);
+    const baseFare = 50;
+    const perKMrate = 15;
+    const baseKM = 2;
+
+    let pickup = parseInt(document.getElementById("pickup").value);
+    let dropoff = parseInt(document.getElementById("dropoff").value);
+    let discountRate = parseFloat(document.getElementById("passenger").value);
+
+    let distance = Math.abs(dropoff - pickup);
+    let totalFare;
+
+    if(distance <= baseKM){
+        totalFare = baseFare;
+    } else {
+        let extraKM = distance - baseKM;
+        totalFare = baseFare + (extraKM * perKMrate);
+    }
+
+    totalFare = totalFare - (totalFare * discountRate);
+
+    document.getElementById("fare").innerHTML = "PHP " + totalFare.toFixed(2);
 }
-
-function calculateDiscounted() {
-    var start = document.getElementById("startStation").value;
-    var end = document.getElementById("endStation").value;
-    var distance = Math.abs(start - end);
-    var regularPrice = Math.max(basefare, basefare + (distance - baseKM) * perKMrate);
-    var discountPrice = regularPrice * 0.8;
-    document.getElementById("fareResult").innerText = "Discounted Fare: ₱" + discountPrice.toFixed(2);
-}
-
