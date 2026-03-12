@@ -12,6 +12,7 @@ body {
         padding: 20%; 
         text-align: center;
         border-radius: 10%;
+        position: fixed;
 }
 
 h1{
@@ -22,6 +23,7 @@ img {
   width: 20%;
   border-radius: 10%;
 }
+
 
 
 
