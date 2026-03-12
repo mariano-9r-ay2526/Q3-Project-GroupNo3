@@ -3,6 +3,7 @@ body {
       background-repeat: no-repeat;
       background-attachment: fixed;  
       background-size: cover;
+      background-position: center;
 }
 
 .container-fluid {
@@ -23,6 +24,22 @@ img {
   width: 20%;
   border-radius: 10%;
 }
+
+.fare-box {
+    margin-top: 20px;
+}
+
+.fare-amount {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
 
 
 
