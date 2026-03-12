@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare Matrix</title>
+</head>
+<body>
+    
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+           <div class="container-fluid">
+
+
+               <a class="navbar-brand" href="#">
+                 <img src="https://www.dotrmrt3.gov.ph/opengraph.png" alt="Logo" style="width:100px;">
+               </a>
+
+
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                   <span class="navbar-toggler-icon"></span>
+               </button>    
+
+
+           <div class="collapse navbar-collapse" id="navbarNav">
+               <form class="d-flex">
+                   <ul class="navbar-nav me-auto mb-2 mb-1g-0">
+                       <li class="nav-item">
+                           <a class="nav-link active" href= "index.html">Home</a>
+                       </li>
+                      
+                       <li class="nav-item">
+                           <a class="nav-link" href="schedule.html">Schedule</a>
+                       </li>
+
+
+                       <li class="nav-item">
+                           <a class="nav-link" href="farematrix.html">Fare Matrix</a>
+                       </li>
+					   
+	                   <li class="nav-item">
+                           <a class="nav-link" href="#help-section">Help</a>
+                       </li>
+
+                       <li class="nav-item">
+                           <a class="nav-link" href="#booknow-section">Book Now</a>
+                       </li>
+
+
+                   </ul>
+               </form>
+           </div>
+          
+           <div class="collapse navbar-collapse" id="navbarNav">
+               <div class="d-flex ms-auto">
+					<a href="registration.html" class="btn btn-primary me-2">Create Account</a>
+                </div>
+           </div>
+       </nav><br>
+
+
+	   <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <h1 class="text-center">Fare Matrix</h1>
+                    <p class="text-center">Book your ride now and experience the convenience of our train services!</p>
+                    <img src="https://mapa-metro.com/mapas/Manila/mapa-metro-manila2.png" class="img-fluid center" alt="MRT-3 Line">
+                </div>
+            </div>
+        </div>
+    </div>
+	
+     <div class="container-fluid p-3">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>MRT-3 Fare Calculator</h3>
+                <p>Select your trip:</p>
+                
+                <label>Pick-Up Location:</label>
+                    <select type="text" class="form-select" id="pickup">
+                        <option value="0">North Avenue</option>
+                        <option value="1">Quezon Avenue</option>
+                        <option value="2">GMA Kamuning</option>
+                        <option value="3">Araneta-Cubao</option>
+                        <option value="4">Santolan</option>
+                        <option value="5">Ortigas</option>
+                        <option value="6">Shaw Blvd</option>
+                        <option value="7">Boni</option>
+                        <option value="8">Guadalupe</option>
+                        <option value="9">Buendia</option>
+                        <option value="10">Ayala</option>
+                        <option value="11">Magallanes</option>
+                        <option value="12">Taft Avenue</option>
+                    </select>
+
+                <label>Drop-Off Location:</label>
+                    <select type="text" class="form-select" id="dropoff">
+                        <option value="0">North Avenue</option>
+                        <option value="1">Quezon Avenue</option>
+                        <option value="2">GMA Kamuning</option>
+                        <option value="3">Araneta-Cubao</option>
+                        <option value="4">Santolan</option>
+                        <option value="5">Ortigas</option>
+                        <option value="6">Shaw Blvd</option>
+                        <option value="7">Boni</option>
+                        <option value="8">Guadalupe</option>
+                        <option value="9">Buendia</option>
+                        <option value="10">Ayala</option>
+                        <option value="11">Magallanes</option>
+                        <option value="12">Taft Avenue</option>
+                    </select>
+
+                    <button onclick="calculateRegular()" class="btn btn-warning fw-bold text-dark">Regular Fare</button>
+                    <button onclick="calculateDiscounted()" class="btn btn-dark fw-bold text-white">Discounted Fare</button>
+                    <button type="button" class="btn btn-warning" onclick="window.location.reload()">Refresh</button>
+
+                    <h2 id="fareResult" class="mt-3 text-primary"></h2>
+            </div>
+        </div>
+    </div><br>
+
+	  
+           <div class="collapse navbar-collapse" id="navbarNav">
+               <div class="d-flex ms-auto">
+					<a href="registration.html" class="btn btn-primary me-2">Create Account</a>
+            	</div>
+           </div>
+       </nav><br>
+
+
+</body>
+</html>
