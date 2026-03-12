@@ -5,12 +5,12 @@ body {
       background-size: cover;
 }
 .container {
-    width: 100px;
+    width: 100%;
     background-color: rgb(180, 203, 244);
-    opacity: 90%;
-    padding: 20px;  
+    opacity: 90%;    padding: 20px;  
     margin: 0px auto;
     text-align:center;
+
     border-radius: 10px;
 }
 
@@ -21,6 +21,7 @@ img {
   width: 20%;
   border-radius: 10%;
 }
+
 
 
 
