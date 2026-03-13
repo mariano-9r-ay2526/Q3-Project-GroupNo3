@@ -6,7 +6,7 @@ body {
       background-position: center;
 }
 
-.container-fluid {
+.container {
           width: 100%;
     padding-right: 15px;
     padding-left: 15px; 
@@ -38,6 +38,7 @@ footer {
     padding: 20px;
     color: white;
 }
+
 
 
 
