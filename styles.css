@@ -53,6 +53,10 @@ footer {
         border-radius: 8px;
 }
 
+.navbar {
+      position: sticky
+}
+
 
 
 
